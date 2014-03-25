@@ -86,8 +86,8 @@
 		'post_wall_must_be_approved' => "Ditt konto måste godkännas för att du ska kunna skriva på den här väggen.",
 		'post_wall_must_confirm' => "Vänligen ^5bekräfta din mailadress^6 för att kunna skriva på den här väggen.",
 		'post_wall_must_login' => "Vänligen ^1logga in^2 eller ^3registrera dig^4 för att kunna skriva på den här väggen.",
-		'questions_by_x' => "Frågor av ^",
-		'wall_for_x' => "Vägg som tillhör ^",
+		'questions_by_x' => "^:n kysymykset",
+		'wall_for_x' => "Seinän omistaa ^",
 		'wall_view_more' => "Visa fler vägg-inlägg...",
 	);
 /*
