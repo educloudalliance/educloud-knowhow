@@ -58,7 +58,7 @@
 		'permit_vote_down' => 'Peukuttaa alas sisältöä',
 		'permit_vote_q' => 'Peukuttaa kysymyksiä',
 		'questions' => 'Sisällöt:',
-		'ranked_x' => ' (ranking #^)',
+		'ranked_x' => ' (sijoitus #^)',
 		'received' => 'Saatu:',
 		'recent_activity_by_x' => '^ - viimeaikaisin aktivisuus',
 		'score' => 'Pistettä:',
@@ -85,10 +85,10 @@
 		'post_wall_limit' => "Du får inte skriva fler vägg-inlägg den här timmen",
 		'post_wall_must_be_approved' => "Ditt konto måste godkännas för att du ska kunna skriva på den här väggen.",
 		'post_wall_must_confirm' => "Vänligen ^5bekräfta din mailadress^6 för att kunna skriva på den här väggen.",
-		'post_wall_must_login' => "Vänligen ^1logga in^2 eller ^3registrera dig^4 för att kunna skriva på den här väggen.",
+		'post_wall_must_login' => "^1Kirjaudu sisään^2 tai ^3rekisteröidy^4 kirjoittaaksesi seinälle.",
 		'questions_by_x' => "^:n kysymykset",
 		'wall_for_x' => "Seinän omistaa ^",
-		'wall_view_more' => "Visa fler vägg-inlägg...",
+		'wall_view_more' => "Näytä lisää...",
 	);
 /*
 	Omit PHP closing tag to help avoid accidental output
