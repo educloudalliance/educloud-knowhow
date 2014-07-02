@@ -1,17 +1,15 @@
 <?php
+	
 /*
-	Swedish Translation for Question2Answer 1.6.1 http://www.question2answer.org/
+	Question2Answer (c) Gideon Greenspan
+
+	http://www.question2answer.org/
+
 	
-	(c) 2013, Anders Hellman
-	Please submit any translation improvements or comments via:
-	http://www.vilkenapp.se/feedback	
-	or
-	ziah75 (at) gmail dot com
-	
-	File: sv/qa-lang-misc.php
-	Version: 1.1
-	Date: 2013-07-15
+	File: qa-include/qa-lang-misc.php
+	Version: See define()s at top of qa-include/qa-base.php
 	Description: Miscellaneous language phrases
+
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -25,10 +23,11 @@
 
 	More about this license: http://www.question2answer.org/license.php
 */
+
 	return array(
-		
 		'block_ip_button' => 'Estä IP-osoite',
 		'browse_categories' => 'Selaile kategorioita',
+		'captcha_approve_fix' => 'Tämä varmistus ei ilmesty enää tunnuksen hyväksynnän jälkeen.',
 		'captcha_confirm_fix' => 'Vältä tämä varmistus ^5varmistamalla sähköpostiosoitteesi^6.',
 		'captcha_error' => 'Täytä roskapostieston kenttä',
 		'captcha_label' => 'Roskapostieston kenttä:',
@@ -45,7 +44,7 @@
 		'feed_edited_prefix' => 'Muutettu: ',
 		'feed_hidden_prefix' => 'Piilotettu: ',
 		'feed_not_found' => 'Syötettä ei löydy',
-		'feed_recategorized_prefix' => 'Kategoriaa on muutettu: ',
+		'feed_recategorized_prefix' => 'Kategoriaa on vaihdettu: ',
 		'feed_reopened_prefix' => 'Avaa uudestaan: ',
 		'feed_reshown_prefix' => 'Näytä uudestaan: ',
 		'feed_retagged_prefix' => 'Avainsanoja muutettu: ',
@@ -55,14 +54,16 @@
 		'feedback_name' => 'Nimesi: (vapaavalintainen)',
 		'feedback_sent' => 'Viestisi on lähetetty - Kiitos.',
 		'feedback_title' => 'Lähetä palaute',
+		'form_security_again' => 'Valitse uudelleen hyväksyäksesi',
+		'form_security_reload' => 'Päivitä sivu, jonka jälkeen yritä uudelleen.',
 		'hide_all_ip_button' => 'Piilota kaikki viestit tästä IP-osoitteesta',
 		'host_name' => 'Palvelimen nimi (host name):',
 		'matches_blocked_ips' => 'Samanlaiset blokatut IP-osoitteet:',
 		'message_empty' => 'Kirjoita viestisi tälle käyttäjälle',
 		'message_explanation' => 'Tämä lähetetään viestinä ^. Sähköpostiosoitettasi ei paljasteta, ellet itse anna sitä viestissä.',
 		'message_for_x' => 'Viestisi henkilölle ^:',
-		'message_limit' => 'Olet lähettänyt liian monta yksityisviestiä, yritä uudistaan tunnin kuluttua.',
-		'message_must_login' => 'Ystävällisesti ^1kirjaudu sisään^2 tai ^3rekisteröidy^4 yksityisviestin lähettämiseksi.',
+		'message_limit' => 'Olet lähettänyt liian monta yksityisviestiä, yritä uudestaan tunnin kuluttua.',
+		'message_must_login' => 'Ole hyvä ja ^1kirjaudu^2 tai ^3rekisteröidy^4 yksityisviestin lähettämiseksi.',
 		'message_recent_history' => 'Viimeisin viesti ^',
 		'message_sent' => 'Lähetetyt yksityisviesit',
 		'my_favorites_title' => 'Suosikkini',
@@ -70,6 +71,10 @@
 		'nav_my_content' => 'Sisältöni',
 		'nav_my_details' => 'Tietoni',
 		'nav_my_favorites' => 'Suosikkini',
+		'nav_user_activity' => 'Viimeisimmät aktiviteetit',
+		'nav_user_as' => 'Kaikki vastaukset',
+		'nav_user_qs' => 'Kaikki kysymykset',
+		'nav_user_wall' => 'Seinä',
 		'no_activity_from_x' => 'Ei aktiviteetteja ^',
 		'no_favorite_categories' => 'Ei suosikkikategorioita',
 		'no_favorite_qs' => 'Ei suosikkikysymyksiä',
@@ -87,35 +92,29 @@
 		'suggest_favorites_add' => 'Lisää kysymys tai muu suosikkeihisi klikkaamalla ^ jonka löydät sivun ylälaidasta.',
 		'suggest_update_favorites' => 'Uutisten lisäämiseksi, lisää aiheita ^1suosikkeihisi^2.',
 		'unblock_ip_button' => 'Poista IP-osoitteen esto',
-		//Additions from 1.6.1
-		'captcha_approve_fix' => "Tätä kontrollia ei näy sitten kun tilisi on hyväksytty.",
-		'form_security_again' => "Ystävällisesti klikkaa uudestaan varmistaaksesi",
-		'form_security_reload' => "Ystävällisesti lataa sivu ja yritä uudestaan",
-		'nav_user_activity' => "Viimeisimmät aktiviteetit",
-		'nav_user_as' => "Kaikki vastaukset",
-		'nav_user_qs' => "Kaikki kysymykset",
-		'nav_user_wall' => "Seinä",
-		'your_a_commented' => "kommentoidut vastauksesi",
-		'your_a_edited' => "muutetut vastauksesi",
-		'your_a_hidden' => "piilotetut vastauksesi",
-		'your_a_questioned' => "kysymys vastaukseesi",
-		'your_a_reshown' => "vastauksesi näkyy taas",
-		'your_a_selected' => "vastauksesi valittiin",
-		'your_c_edited' => "kommenttiasi on muutettu",
-		'your_c_followed' => "kommenttiasi seurataan",
-		'your_c_hidden' => "kommenttisi on piilotettu",
-		'your_c_moved' => "kommenttisi on siirretty",
-		'your_c_reshown' => "kommenttisi näkyy taas",
-		'your_q_answered' => "kysymykseesi on vastattu",
-		'your_q_closed' => "kysymyksesi on suljettu",
-		'your_q_commented' => "kysymystäsi on kommentoitu",
-		'your_q_edited' => "kysymystäsi on muutettu",
-		'your_q_hidden' => "kysymyksesi on piilotettu",
-		'your_q_recategorized' => "kysymykselläsi on uusi kategoria",
-		'your_q_reopened' => "kysymyksesi on avattu uudestaan",
-		'your_q_reshown' => "kysymyksesi näkyy taas",
-		'your_q_retagged' => "kysymyksessäsi on uusia avainsanoja",
+		'your_a_commented' => 'kommentoidut vastauksesi',
+		'your_a_edited' => 'muutetut vastauksesi',
+		'your_a_hidden' => 'piilotetut vastauksesi',
+		'your_a_questioned' => 'kysymys vastaukseesi',
+		'your_a_reshown' => 'vastauksesi näkyy taas',
+		'your_a_selected' => 'vastauksesi valittiin',
+		'your_c_edited' => 'kommenttiasi on muutettu',
+		'your_c_followed' => 'kommenttiasi seurataan',
+		'your_c_hidden' => 'kommenttisi on piilotettu',
+		'your_c_moved' => 'kommenttisi on siirretty',
+		'your_c_reshown' => 'kommenttisi näkyy taas',
+		'your_q_answered' => 'kysymykseesi on vastattu',
+		'your_q_closed' => 'kysymyksesi on suljettu',
+		'your_q_commented' => 'kysymystäsi on kommentoitu',
+		'your_q_edited' => 'kysymystäsi on muutettu',
+		'your_q_hidden' => 'kysymyksesi on piilotettu',
+		'your_q_recategorized' => 'kysymykselläsi on uusi kategoria',
+		'your_q_reopened' => 'kysymyksesi on avattu uudestaan',
+		'your_q_reshown' => 'kysymyksesi näkyy taas',
+		'your_q_retagged' => 'kysymyksessäsi on uusia avainsanoja',
 	);
+	
+
 /*
 	Omit PHP closing tag to help avoid accidental output
 */
